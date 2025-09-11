@@ -192,7 +192,7 @@ export function PopularDestinations() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);   To be used if we want to track current index for any reason
   const [scrollProgress, setScrollProgress] = useState(0);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
@@ -470,13 +470,14 @@ export function PopularDestinations() {
               ref={scrollContainerRef}
               onScroll={handleScroll}
               className="flex gap-8 overflow-x-auto scrollbar-hide px-8 pb-8 h-full scroll-smooth"
-              style={{
-                scrollbarWidth: "none",
-                msOverflowStyle: "none",
-                WebkitScrollbar: { display: "none" },
-                touchAction: "pan-x",
-                WebkitOverflowScrolling: "touch",
-              }}
+              style={
+                {
+                  scrollbarWidth: "none",
+                  msOverflowStyle: "none",
+                  touchAction: "pan-x",
+                  WebkitOverflowScrolling: "touch",
+                } as React.CSSProperties
+              }
             >
               {allDestinations.map((destination, index) => (
                 <motion.div
