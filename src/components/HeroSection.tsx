@@ -66,7 +66,7 @@ export function HeroSection() {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="./202509091443 (2).mp4" type="video/mp4" />
+          <source src="./202509091443 (2).webm" type="video/mp4" />
           {/* Fallback background */}
           <div className="w-full h-full bg-gradient-to-br from-gray-900 via-[#c92121] to-gray-800"></div>
         </video>

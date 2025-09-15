@@ -81,7 +81,7 @@ export function Header() {
                 className="w-8 h-8 flex items-center justify-center font-bold "
                 style={{ width: "100px" }}
               >
-                <img src="./New-edo-logo-with-bus-1-scaled.jpg" alt="logo" />
+                <img src="./New-edo-logo-with-bus-1-scaled.webp" alt="logo" />
               </div>
             </motion.div>
           </motion.div>

@@ -27,7 +27,7 @@ const destinations = [
     name: "Ajah, Lagos",
     country:
       "Front of Furniture Square, Thomas Estate, Along Ajah Ibeju Lekki Expressway, Ajah – Lagos",
-    image: "./Aja lagos, furniture square (2).jpg",
+    image: "./Aja lagos, furniture square (2).webp",
     price: "$49",
     rating: 4.8,
     routes: "152 routes available",
@@ -40,7 +40,7 @@ const destinations = [
     name: "Iyana - Ipaja, Lagos",
     country:
       "173, Lagos Abeokuta Expressway, By BRT Bus Stop, Iyana – Ipaja, Lagos.",
-    image: "./Iyana-Ipaja.jpg",
+    image: "./Iyana-Ipaja.webp",
     price: "$35",
     rating: 4.9,
     routes: "89 routes available",
@@ -52,7 +52,7 @@ const destinations = [
     id: 3,
     name: "Utako, Abuja",
     country: "Utako Bus Terminal, Basemate Warehouse 5, Utako, Abuja.",
-    image: "./Utako Abuja.jpg",
+    image: "./Utako Abuja.webp",
     price: "$42",
     rating: 4.7,
     routes: "67 routes available",
@@ -68,7 +68,7 @@ const allDestinations = [
     id: 4,
     name: "Edo, HQ",
     country: "Central Park, Obakhavhaye Terminal, Benin City, Edo State.",
-    image: "./Benin central park.jpeg",
+    image: "./Benin central park.webp",
     price: "$89",
     rating: 4.9,
     routes: "234 routes available",
@@ -81,7 +81,7 @@ const allDestinations = [
     name: "Edo, Auchi",
     country:
       "Between Mr Biggs and Danco Filling Station, Auchi/Okene Road, Before Jetu Junction, Auchi.",
-    image: "./Mr Biggs.jpeg",
+    image: "./Mr Biggs.webp",
     price: "$125",
     rating: 4.8,
     routes: "189 routes available",
@@ -94,7 +94,7 @@ const allDestinations = [
     name: "Edo, Ekpoma",
     country:
       "Benin Auchi Expressway, Before Ikhiromo Junction, Ukpenu Ekpoma, Edo State.",
-    image: "./Benin Auchi.jpeg",
+    image: "./Benin Auchi.webp",
     price: "$78",
     rating: 4.7,
     routes: "298 routes available",

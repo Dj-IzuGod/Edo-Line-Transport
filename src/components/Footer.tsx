@@ -40,14 +40,7 @@ export function Footer() {
     "Press & Media",
   ];
 
-  const services = [
-    "Bus Booking",
-    "Train Booking",
-    "Flight Booking",
-    "Hotel Booking",
-    "Travel Insurance",
-    "Group Booking",
-  ];
+  const services = ["Bus Booking", "Travel Insurance", "Group Booking"];
 
   const policies = [
     "Privacy Policy",
@@ -152,14 +145,19 @@ export function Footer() {
                 <motion.div
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.6 }}
-                  className="bg-[#c92121] text-white p-3 rounded-xl mr-4 shadow-lg"
+                  className="bg-[#c92121] text-white p-3  mr-4 shadow-lg"
                 >
-                  <div className="w-8 h-8 flex items-center justify-center font-bold text-xl">
-                    T
+                  <div
+                    className="w-8 h-8 flex items-center justify-center font-bold "
+                    style={{ width: "100px" }}
+                  >
+                    <img
+                      src="./New-edo-logo-with-bus-1-scaled.webp"
+                      alt="logo"
+                    />
                   </div>
                 </motion.div>
                 <div>
-                  <h1 className="text-2xl font-bold">TransportBooking</h1>
                   <p className="text-sm text-gray-400 font-medium">
                     Your Journey Starts Here
                   </p>
@@ -271,18 +269,19 @@ export function Footer() {
                 {[
                   {
                     Icon: Phone,
-                    title: "+1 (555) 123-4567",
+                    title: "+2348161519935, +2348127132210",
                     subtitle: "24/7 Customer Support",
                   },
                   {
                     Icon: Mail,
-                    title: "support@transportbooking.com",
+                    title: "info@newedoline.com",
                     subtitle: "For general inquiries",
                   },
                   {
                     Icon: MapPin,
-                    title: "123 Business Street",
-                    subtitle: "New York, NY 10001",
+                    title:
+                      "Central Park, Obakhavhaye Terminal, Benin City, Edo State.",
+                    subtitle: "Edo, HQ",
                   },
                 ].map(({ Icon, title, subtitle }, index) => (
                   <motion.div
@@ -322,7 +321,7 @@ export function Footer() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-gray-400 text-lg"
             >
-              © 2025 TransportBooking. All rights reserved.
+              © 2025 Edo Line Transport. All rights reserved.
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}
