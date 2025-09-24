@@ -2,10 +2,14 @@ import { Button } from "./ui/button";
 import { Menu, Phone, Mail, User, X } from "lucide-react";
 import { motion } from "motion/react";
 import { useState, useEffect } from "react";
+import { LoginModal } from "./LoginModal";
+import { SignupModal } from "./SignupModal";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+  const [isSignupModalOpen, setIsSignupModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -125,6 +129,7 @@ export function Header() {
               <Button
                 variant="outline"
                 size="sm"
+                onClick={() => setIsLoginModalOpen(true)}
                 className="hidden md:flex items-center gap-2 border-gray-300 hover:border-[#c92121] transition-colors"
               >
                 <User className="w-4 h-4" />
@@ -132,7 +137,10 @@ export function Header() {
               </Button>
             </motion.div>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Button className="bg-[#c92121] hover:bg-[#a01a1a] text-white shadow-lg hover:shadow-xl transition-all duration-300">
+              <Button
+                onClick={() => setIsSignupModalOpen(true)}
+                className="bg-[#c92121] hover:bg-[#a01a1a] text-white shadow-lg hover:shadow-xl transition-all duration-300"
+              >
                 Sign Up
               </Button>
             </motion.div>
@@ -185,6 +193,25 @@ export function Header() {
           </motion.div>
         )}
       </div>
+      {/* Login Modal */}
+      <LoginModal
+        isOpen={isLoginModalOpen}
+        onClose={() => setIsLoginModalOpen(false)}
+        onSwitchToSignup={() => {
+          setIsLoginModalOpen(false);
+          setIsSignupModalOpen(true);
+        }}
+      />
+
+      {/* Signup Modal */}
+      <SignupModal
+        isOpen={isSignupModalOpen}
+        onClose={() => setIsSignupModalOpen(false)}
+        onSwitchToLogin={() => {
+          setIsSignupModalOpen(false);
+          setIsLoginModalOpen(true);
+        }}
+      />
     </motion.header>
   );
 }
